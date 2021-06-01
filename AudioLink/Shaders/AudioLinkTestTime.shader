@@ -61,12 +61,12 @@
                 float2 fmxy = float2( 4, 6 ) - (glsl_mod(pos,1.)*float2(4.,6.));
 
                 
-                if( dig.y < 10 )
+                if( dig.y < 12 )
                 {
                     if( dig.x < cols - number_area_cols )
                     {
                         uint sendchar = 0;
-                        if( dig.y > 6 )
+                        if( dig.y > 5 )
                         {
                             sendchar = (dig.y-6)*10 + dig.x;
                         }
